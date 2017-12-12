@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Mallett Website Developer</title>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+  <body>
+    <div class="main-nav">
+        <ul class="nav">
+            <li class="name"> Daniel Mallett</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="#">post</a></li>
+            <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main-form">
+
+  <form action="signup.html" method="post">
+    <h1>Sign Up</h1>
+    <!-- The fieldsets are used to group a collection elements.-->
+    <fieldset>
+    <!-- Using the legend element along with the span allows use to lable
+  the steps and prioraties them.-->
+    <legend><span class="number">1</span>Your Basic Info</legend>
+
+      <label for="name">Name*:</label>
+      <input type="text" id="name" name="user_name">
+
+      <label for="mail">Email*:</lable>
+      <input type="email" id="email" name="user_email">
+
+      <label for="password">Password*:</label>
+      <input type="password" id="password" name="user_password">
+
+      <label for="dob">Date of Birth*:</label>
+      <input type="text" id="dob" name="user_dob">
+
+      <label>Age*:</label>
+      <input type="radio" id="over_18" value="over_18" name="user_age">
+
+</fieldset>
+
+<fieldset>
+  <legend><span class="number">2</span> Your Profile</legend>
+    <label for="bio">Biography:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+
+        <!-- using the option element. Enables us to use
+      a drop down box.-->
+
+  <label for="job"> Job Role:</label>
+    <select id="job" name="user_job">
+      <optgroup label="Web">
+          <option value="frontend_developer">Front-End Developer</option>
+          <option value="php_developer">PHP Developer</option>
+          <option value="python_developer">Python Developer</option>
+          <option value="asp_developer">ASP.NET Developer</option>
+          <option value="web_designer">Web Designer</option>
+          <option value="wordpress_developer">WordPress Developer</option>
+      </optgroup>
+
+      <optgroup label="Mobile">
+          <option value="andriod_developer">Andriod Developer</option>
+          <option value="ios_developer">IOS Developer</option>
+          <option value="mobile_designer">Mobile Designer</option>
+      </optgroup>
+
+      <optgroup label="Business">
+          <option value="business_owner">Business Owner</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="presentation_skills">Presentation Skills</option>
+      </optgroup>
+    </select>
+
+    <label>What areas are you interested in learning?:</label><br>
+      <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+      <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+      <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br>
+  </fieldset>
+
+    <button type="submit">Sign Up</button>
+</form>
+  <!-- END OF FORM DIV -->
+    </div>
+
+</body>
+</html>
